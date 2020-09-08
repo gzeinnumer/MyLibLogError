@@ -330,9 +330,13 @@ Jika sukses maka akan tampil seperti ini :
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example1.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example2.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example3.jpg)|
 |--|--|--|
 |Request Permition|Jika ada error Force Close|Folder `MyLibsTesting` sudah terbuat|
-|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example4.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example5.jpg)|-|
-|Folder `Logs` sudah terbuat didalam `MyLibsTesting`|File log yang terbuat|-|
+
+|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example4.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example5.jpg)|
+|--|--|
+|Folder `Logs` sudah terbuat didalam `MyLibsTesting`|File log yang terbuat|
+
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example6.jpg)|
+|--|
 |Log yang sama dengan Logcat yang ada di Android Studio|
 
 ---
