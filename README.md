@@ -2,10 +2,6 @@
 MyLibLogError
 </h1>
 
-<p align="center">
-<img src="https://i.ibb.co/YdvBMMG/hiya.gif"/>
-</p>
-
 <div align="center">
  <a><img src="https://img.shields.io/badge/Version-0.0.1-brightgreen.svg?style=flat"></a>
  <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
@@ -16,8 +12,7 @@ MyLibLogError
 ---
 
 ### Feature List
-- [x] Ada
-- [ ] Tidak ada
+- [x] Menyimpan error report ke file txt
 
 ### Tech stack and 3rd library
 - File ([docs](https://developer.android.com/reference/java/io/File))
@@ -204,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
 #
 **Step 5.** Create Folder
 \
-Jika `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka kita akan membuat dan menjalankan function `onSuccessCheckPermitions`. **Cukup 1 kali penggunaan saja di FirstActivity**:
+Jika `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka kita akan membuat dan menjalankan function `onSuccessCheckPermitions`. **Cukup 1 kali penggunaan saja di FirstActivity(Acctivity yang pertama berjalan)**:
 
 ```java
 public class MainActivity extends AppCompatActivity {
