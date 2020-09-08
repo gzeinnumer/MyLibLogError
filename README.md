@@ -82,7 +82,7 @@ dependencies {
 
 \
 **DEBUG.** Jika kamu menemukan masalah pada sistem, kamu bisa debug dengan cara sperti ini.
-|![](https://github.com/gzeinnumer/MyLibDirectory/blob/master/assets/debug.jpg)|
+|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/debug.jpg)|
 |--|
 
 
@@ -324,9 +324,11 @@ public class MainActivity extends AppCompatActivity {
 **Step 8.**
 \
 Jika sukses maka akan tampil seperti ini :
-|![](https://github.com/gzeinnumer/MyLibDirectory/blob/master/assets/example1.jpg)|![](https://github.com/gzeinnumer/MyLibDirectory/blob/master/assets/example2.jpg)|![](https://github.com/gzeinnumer/MyLibDirectory/blob/master/assets/example3.jpg)|![](https://github.com/gzeinnumer/MyLibDirectory/blob/master/assets/example4.jpg)|
-|--|--|--|--|
-|Request Permition |Folder MyLibsTesting sudah dibuat|`folder1` dan `folder2` sudah terbuat|`folder1_1` yang berada didalam `folder1` sudah dibuat|
+|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example1.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example2.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example3.jpg)|
+|--|--|--|
+|Request Permition|Jika ada error Force Close|Folder `MyLibsTesting` sudah terbuat|
+|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example4.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example5.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example6.jpg)|
+|Folder `Logs` sudah terbuat didalam `MyLibsTesting`|File log yang terbuat|Log yang sama dengan Logcat yang ada di Android Studio|
 
 ---
 
