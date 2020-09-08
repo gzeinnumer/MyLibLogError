@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
 #
 **Step 5.** Create Folder
 \
-Jika `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka kita akan membuat dan menjalankan function `onSuccessCheckPermitions`:
+Jika `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka kita akan membuat dan menjalankan function `onSuccessCheckPermitions`. **Cukup 1 kali penggunaan saja di FirstActivity**:
 
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -212,7 +212,9 @@ public class MainActivity extends AppCompatActivity {
     ...
 
     private void onSuccessCheckPermitions() {
+        //   /storage/emulated/0/MyLibsTesting
         String appName = getResources().getString(R.string.app_name);
+        //   /storage/emulated/0/MyLibsTesting/logs
         String logLocation = "/logs";
         MyBaseUtilsLogError.initFileLogError(appName, logLocation);
     }
@@ -223,6 +225,7 @@ public class MainActivity extends AppCompatActivity {
 **notes.** 
   - `appName` adalah nama folder  yang akan dibuat didalam penyimpanan kamu.
   - `logLocation` adalah nama folder yang akan dibuat didalam `appName` penyimpanan kamu untuk menyimpan file log yang akan dibuat.
+  - Panggil function ini hanya sekali saja, setelah permition diberikan, kamu tidak perlu menggunakan function ini sering.
   
 #
 **Step 6.**
@@ -327,8 +330,10 @@ Jika sukses maka akan tampil seperti ini :
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example1.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example2.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example3.jpg)|
 |--|--|--|
 |Request Permition|Jika ada error Force Close|Folder `MyLibsTesting` sudah terbuat|
-|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example4.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example5.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example6.jpg)|
-|Folder `Logs` sudah terbuat didalam `MyLibsTesting`|File log yang terbuat|Log yang sama dengan Logcat yang ada di Android Studio|
+|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example4.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example5.jpg)|-|
+|Folder `Logs` sudah terbuat didalam `MyLibsTesting`|File log yang terbuat|-|
+|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example6.jpg)|
+|Log yang sama dengan Logcat yang ada di Android Studio|
 
 ---
 
