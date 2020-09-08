@@ -16,6 +16,7 @@ MyLibLogError
 
 ### Tech stack and 3rd library
 - File ([docs](https://developer.android.com/reference/java/io/File))
+- MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition))
 
 ### Function Log Error
 > Example : MyBaseUtilsLogError.initFileLogError(valueString);
@@ -69,7 +70,11 @@ Jika `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka
 
 ```java
 public class MainActivity extends AppCompatActivity {
+
+    //<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    //<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     
+    //berikan izin diatas agar function bisa berjalan, pastikan kamu menggunakan `onRequestPermissionsResult`, jika sudah diberikan izin yang diperlukan maka panggil function `onSuccessCheckPermitions` didalam `onRequestPermissionsResult` 
     //untuk bagian diatas ini kamu bisa ukuti cara yang sudah saya buat di repo saya yang lain. cari `Contoh Multi Check Permition` : https://github.com/gzeinnumer/MultiPermition
     ...
 
