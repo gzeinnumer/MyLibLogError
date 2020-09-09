@@ -66,7 +66,7 @@ Librari ini membutuhkan permition terlebih dahulu. kamu bisa pakai cara kamu, at
 #
 **Step 1.**
 \
-Jika sudah mengikuti cara MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition))(Ikuti Step 1 - Step 9) dan `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka kita akan membuat dan menjalankan function `onSuccessCheckPermitions`. **Cukup 1 kali penggunaan saja di FirstActivity(Acctivity yang pertama berjalan)**:
+Jika sudah mengikuti cara MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition))(Ikuti Step 1 - Step 9) dan `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka kita akan membuat dan menjalankan function `onSuccessCheckPermitions`. **Cukup 1 kali penggunaan saja di FirstActivity(Activity yang pertama berjalan)**:
 
 ```java
 public class MainActivity extends AppCompatActivity {
