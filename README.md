@@ -78,10 +78,7 @@ public class MainActivity extends AppCompatActivity {
     //`onRequestPermissionsResult`, jika sudah diberikan izin yang diperlukan 
     //maka panggil function `onSuccessCheckPermitions` didalam `onRequestPermissionsResult` 
     //untuk bagian diatas ini kamu bisa ukuti cara yang sudah saya buat di repo saya yang lain. 
-    // cari `Contoh Multi Check Permition` diatas : https://
-    
-    
-    tion
+    //cari `Contoh Multi Check Permition` diatas : https://github.com/gzeinnumer/MultiPermition
     ...
 
     private void onSuccessCheckPermitions() {
