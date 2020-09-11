@@ -71,29 +71,7 @@ Jika sudah mengikuti cara **MultiPermition ([docs](https://github.com/gzeinnumer
 ```java
 public class MainActivity extends AppCompatActivity {
 
-    //<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    //<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    
-    //berikan izin diatas agar function bisa berjalan, pastikan kamu menggunakan 
-    //`onRequestPermissionsResult`, jika sudah diberikan izin yang diperlukan 
-    //maka panggil function `onSuccessCheckPermitions` didalam `onRequestPermissionsResult` 
-    //untuk bagian diatas ini kamu bisa ukuti cara yang sudah Zein buat di repo Zein yang lain. 
-    //cari `Contoh Multi Check Permition` diatas : https://github.com/gzeinnumer/MultiPermition
     ...
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        if (requestCode == MULTIPLE_PERMISSIONS) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                onSuccessCheckPermitions();
-            } else {
-                StringBuilder perStr = new StringBuilder();
-                for (String per : permissions) {
-                    perStr.append("\n").append(per);
-                }
-            }
-        }
-    }
 
     private void onSuccessCheckPermitions() {
         //   /storage/emulated/0/MyLibsTesting
@@ -103,11 +81,15 @@ public class MainActivity extends AppCompatActivity {
         MyBaseUtilsLogError.initFileLogError(appName, logLocation);
     }
 
+    ...
+
 }
 ```
 
 #
 **Step 2.**
+\
+FullCode akan tampak seperti ini ([example](https://github.com/gzeinnumer/MultiPermition))
 \
 Jika sukses maka akan tampil seperti ini :
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example1.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example2.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example3.jpg)|
