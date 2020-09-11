@@ -55,9 +55,9 @@ dependencies {
 ---
 
 ## Function Log Error
-Librari ini membutuhkan permition terlebih dahulu. kamu bisa pakai cara kamu, atau kamu bisa pakai cara yang selalu saya pakai.
+**Librari ini membutuhkan permition terlebih dahulu. kamu bisa pakai cara kamu, atau kamu bisa pakai cara yang selalu saya pakai**.
 \
-**Contoh Multi Check Permissions.** Kamu bisa lihat contohnya disini MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition)) (Ikuti Step 1 - Step 9) :
+**Contoh Multi Check Permissions. Kamu bisa lihat contohnya disini MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition)) (Ikuti Step 1 - Step 9)** :
 \
 **DEBUG.** Jika kamu menemukan masalah pada sistem, kamu bisa debug dengan cara sperti ini.
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/debug.jpg)|
@@ -102,7 +102,7 @@ Jika sukses maka akan tampil seperti ini :
 
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example4.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example5.jpg)|
 |--|--|
-|Folder `Logs` sudah terbuat didalam `MyLibsTesting`|File log yang terbuat|
+|Folder `Logs` sudah terbuat didalam `MyLibsTesting`|File log yang terbuat(Jika Terjadi `Force Close`)|
 
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example6.jpg)|
 |--|
