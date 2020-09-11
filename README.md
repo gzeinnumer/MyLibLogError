@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 #
 **Step 2.**
 \
-FullCode akan tampak seperti ini ([example](https://github.com/gzeinnumer/MultiPermition))
+FullCode akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibLogError/blob/master/example/MainActivity.java))
 \
 Jika sukses maka akan tampil seperti ini :
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example1.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example2.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example3.jpg)|
