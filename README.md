@@ -66,7 +66,7 @@ dependencies {
 #
 **Step 1.**
 \
-Jika sudah mengikuti cara MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition)) (Ikuti Step 1 - Step 9) dan `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka kita akan membuat dan menjalankan function `onSuccessCheckPermitions`. **Cukup 1 kali penggunaan saja di FirstActivity(Activity yang pertama berjalan)**:
+Jika sudah mengikuti cara MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition)) (Ikuti Step 1 - Step 9) dan `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka kita akan membuat dan menjalankan function `onSuccessCheckPermitions` didalam `onRequestPermissionsResult`. **Cukup 1 kali penggunaan saja di FirstActivity(Activity yang pertama berjalan)**:
 
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -80,6 +80,20 @@ public class MainActivity extends AppCompatActivity {
     //untuk bagian diatas ini kamu bisa ukuti cara yang sudah saya buat di repo saya yang lain. 
     //cari `Contoh Multi Check Permition` diatas : https://github.com/gzeinnumer/MultiPermition
     ...
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode == MULTIPLE_PERMISSIONS) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                onSuccessCheckPermitions();
+            } else {
+                StringBuilder perStr = new StringBuilder();
+                for (String per : permissions) {
+                    perStr.append("\n").append(per);
+                }
+            }
+        }
+    }
 
     private void onSuccessCheckPermitions() {
         //   /storage/emulated/0/MyLibsTesting
