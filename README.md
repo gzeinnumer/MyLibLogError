@@ -55,7 +55,7 @@ dependencies {
 ---
 
 ## Function Log Error
-**Librari ini membutuhkan permition terlebih dahulu. kamu bisa pakai cara kamu, atau kamu bisa pakai cara yang selalu saya pakai**.
+**Library ini membutuhkan permition terlebih dahulu. kamu bisa pakai cara kamu, atau kamu bisa pakai cara yang selalu saya pakai**.
 \
 **Contoh Multi Check Permissions. Kamu bisa lihat contohnya disini MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition)) (Ikuti Step 1 - Step 9)** :
 \
@@ -66,7 +66,7 @@ dependencies {
 #
 **Step 1.**
 \
-Jika sudah mengikuti cara MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition)) (Ikuti Step 1 - Step 9) dan `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka kita akan membuat dan menjalankan function `onSuccessCheckPermitions` didalam `onRequestPermissionsResult`. **Cukup 1 kali penggunaan saja di FirstActivity(Activity yang pertama berjalan)**:
+Jika sudah mengikuti cara MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition)) (Ikuti Step 1 - Step 9) dan `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka kita akan membuat dan menjalankan function `onSuccessCheckPermitions` di dalam `onRequestPermissionsResult`. **Cukup 1 kali penggunaan saja di FirstActivity(Activity yang pertama berjalan)**:
 
 ```java
 public class MainActivity extends AppCompatActivity {
