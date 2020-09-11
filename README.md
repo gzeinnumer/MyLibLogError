@@ -6,7 +6,7 @@ MyLibLogError
  <a><img src="https://img.shields.io/badge/Version-0.0.1-brightgreen.svg?style=flat"></a>
  <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
  <a href="https://github.com/gzeinnumer"><img src="https://img.shields.io/github/followers/gzeinnumer?label=follow&style=social"></a>
- <p>Function untuk membuat log file jika ada error, jadi kamu bisa dengan mudah cari errorya dimana jika user mengalami error, dokumen ini dibuat berdasarkan pengalaman saya, kasih masukan kalau ada yang kurang. terimakasih karna sudah berkunjung</p>
+ <p>Function untuk membuat log file jika ada error, jadi kamu bisa dengan mudah cari errorya dimana jika user mengalami error, dokumen ini dibuat berdasarkan pengalaman Zein, kasih masukan kalau ada yang kurang. terimakasih karna sudah berkunjung</p>
 </div>
 
 ---
@@ -55,7 +55,7 @@ dependencies {
 ---
 
 ## Function Log Error
-**Library ini membutuhkan permition terlebih dahulu. kamu bisa pakai cara kamu, atau kamu bisa pakai cara yang selalu saya pakai**.
+**Library ini membutuhkan permition terlebih dahulu. kamu bisa pakai cara kamu, atau kamu bisa pakai cara yang selalu Zein pakai**.
 \
 **Contoh Multi Check Permissions. Kamu bisa lihat contohnya disini MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition)) (Ikuti Step 1 - Step 9)** :
 \
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     //berikan izin diatas agar function bisa berjalan, pastikan kamu menggunakan 
     //`onRequestPermissionsResult`, jika sudah diberikan izin yang diperlukan 
     //maka panggil function `onSuccessCheckPermitions` didalam `onRequestPermissionsResult` 
-    //untuk bagian diatas ini kamu bisa ukuti cara yang sudah saya buat di repo saya yang lain. 
+    //untuk bagian diatas ini kamu bisa ukuti cara yang sudah Zein buat di repo Zein yang lain. 
     //cari `Contoh Multi Check Permition` diatas : https://github.com/gzeinnumer/MultiPermition
     ...
 
