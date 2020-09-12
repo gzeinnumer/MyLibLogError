@@ -3,10 +3,13 @@ MyLibLogError
 </h1>
 
 <div align="center">
- <a><img src="https://img.shields.io/badge/Version-0.0.1-brightgreen.svg?style=flat"></a>
- <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
- <a href="https://github.com/gzeinnumer"><img src="https://img.shields.io/github/followers/gzeinnumer?label=follow&style=social"></a>
- <p>Function untuk membuat log file jika ada error, jadi kamu bisa dengan mudah cari errorya dimana jika user mengalami error, dokumen ini dibuat berdasarkan pengalaman Zein, kasih masukan kalau ada yang kurang. terimakasih karna sudah berkunjung</p>
+    <a><img src="https://img.shields.io/badge/Version-0.0.1-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
+    <a href="https://github.com/gzeinnumer"><img src="https://img.shields.io/github/followers/gzeinnumer?label=follow&style=social"></a>
+    <br>
+    <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Koltin-Suport-green?logo=kotlin&style=flat"></a>
+    <p>Function untuk membuat log file jika ada error, jadi kamu bisa dengan mudah cari errorya dimana jika user mengalami error, dokumen ini dibuat berdasarkan pengalaman Zein, kasih masukan kalau ada yang kurang. terimakasih karna sudah berkunjung</p>
 </div>
 
 ---
