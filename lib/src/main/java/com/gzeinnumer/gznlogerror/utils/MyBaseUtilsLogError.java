@@ -5,6 +5,8 @@ import android.util.Log;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MyBaseUtilsLogError {
 
@@ -40,7 +42,8 @@ public class MyBaseUtilsLogError {
 
             File appDirectory = new File( Environment.getExternalStorageDirectory() + appName );
             File logDirectory = new File( appDirectory + logLocation );
-            File logFile = new File( logDirectory, "logcat_" + System.currentTimeMillis() + ".txt" );
+            String fileName = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date());
+            File logFile = new File( logDirectory, "logcat_" + fileName + ".txt" );
 
             // create app folder
             if ( !appDirectory.exists() ) {
