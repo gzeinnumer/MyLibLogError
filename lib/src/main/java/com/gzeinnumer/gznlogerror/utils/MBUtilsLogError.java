@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class MyBaseUtilsLogError {
+public class MBUtilsLogError {
 
     public static void logSystemFunctionGlobal(String function, String msg) {
         Log.d("MyBaseUtilsLogError_Deb", function + "_" + msg);
