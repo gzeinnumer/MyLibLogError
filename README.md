@@ -9,21 +9,21 @@ MyLibLogError
 <div align="center">
     <a><img src="https://img.shields.io/badge/Version-0.0.2-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
-    <a href="https://github.com/gzeinnumer"><img src="https://img.shields.io/github/followers/gzeinnumer?label=follow&style=social"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Koltin-Suport-green?logo=kotlin&style=flat"></a>
+    <a href="https://github.com/gzeinnumer"><img src="https://img.shields.io/github/followers/gzeinnumer?label=follow&style=social"></a>
     <br>
-    <p>Function to make Logs File if your app get `Force Close`, so you can track if error happen to your app in production.</p>
+    <p>Function to make Logs File if your app get <b>Force Close</b>, so you can track if error happen to your app in production.</p>
 </div>
 
 ---
 
 ### Feature List
-- [x] **Make Log File** like logcat in android Studio.
+- [x] **Make Log File** like logcat in **Android Studio**.
 
 ### Tech stack and 3rd library
 - File ([docs](https://developer.android.com/reference/java/io/File))
-- MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition))
+- MultiPermission ([docs](https://github.com/gzeinnumer/MultiPermition))
 
 ### Function Log Error
 > Example : MBUtilsLogError.initFileLogError(valueString);
@@ -57,18 +57,18 @@ dependencies {
 ---
 
 ## Function Log Error
-**Library ini membutuhkan permition terlebih dahulu. kamu bisa pakai cara kamu, atau kamu bisa pakai cara yang selalu Zein pakai**.
-\
+**This library need permission. You can use your own yay to get permition, or you can use my repo, here is my repository ([MultiPermition](https://github.com/gzeinnumer/MultiPermition)) (Follow Step 1 - Step 9) :**
 **Contoh Multi Check Permissions. Kamu bisa lihat contohnya disini MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition)) (Ikuti Step 1 - Step 9)** :
-\
-**DEBUG.** Jika kamu menemukan masalah pada sistem, kamu bisa debug dengan cara sperti ini.
+
+### DEBUG.
+If you find troble and this library doesn't work, you can trace error with thih log.
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/debug.jpg)|
 |--|
 
 #
-**Step 1.**
-\
-Jika sudah mengikuti cara **MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition)) (Ikuti Step 1 - Step 9)** dan `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka kita akan membuat dan menjalankan function `onSuccessCheckPermitions` di dalam `onRequestPermissionsResult`. **Cukup 1 kali penggunaan saja di FirstActivity(Activity yang pertama berjalan)**:
+### Step 1.
+If you has get permission, you can run function inside `onRequestPermissionsResult`  `onSuccessCheckPermitions` .  
+**Remember : You only need use this function 1 TIME in your FirstActivity(on Manifest) / or Activity that you use to request permission**:
 
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -89,22 +89,21 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-**Step 2.**
-\
-FullCode akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibLogError/blob/master/example/MainActivity.java))
-\
-Jika sukses maka akan tampil seperti ini :
+### Step 2.
+FullCode ([example](https://github.com/gzeinnumer/MyLibLogError/blob/master/example/MainActivity.java))
+
+Preview :
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example1.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example2.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example3.jpg)|
 |--|--|--|
-|Request Permition|Jika ada error Force Close|Folder `MyLibsTesting` sudah terbuat|
+|Request Permission|If `Force Close` happen|Folder `MyLibsTesting` created|
 
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example4.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example5.jpg)|
 |--|--|
-|Folder `Logs` sudah terbuat didalam `MyLibsTesting`|File log yang terbuat(Jika Terjadi `Force Close`)|
+|Folder `Logs` created inside `MyLibsTesting`|File log created(if your app `Force Close`)|
 
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example6.jpg)|
 |--|
-|Log yang sama dengan Logcat yang ada di Android Studio|
+|Looks like logcat on Android studio|
 
 ---
 
