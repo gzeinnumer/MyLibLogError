@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibUtils/blob/master/preview/bg.jpg" width="400"/>
+</p>
+
 <h1 align="center">
 MyLibLogError
 </h1>
@@ -6,39 +10,35 @@ MyLibLogError
     <a><img src="https://img.shields.io/badge/Version-0.0.2-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a href="https://github.com/gzeinnumer"><img src="https://img.shields.io/github/followers/gzeinnumer?label=follow&style=social"></a>
-    <br>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Koltin-Suport-green?logo=kotlin&style=flat"></a>
-    <p>Function untuk membuat log file jika ada error, jadi kamu bisa dengan mudah cari errorya dimana jika user mengalami error, dokumen ini dibuat berdasarkan pengalaman Zein, kasih masukan kalau ada yang kurang. terimakasih karna sudah berkunjung</p>
+    <br>
+    <p>Function to make Logs File if your app get `Force Close`, so you can track if error happen to your app in production.</p>
 </div>
 
 ---
 
 ### Feature List
-- [x] Menyimpan error report ke file txt
+- [x] **Make Log File** like logcat in android Studio.
 
 ### Tech stack and 3rd library
 - File ([docs](https://developer.android.com/reference/java/io/File))
 - MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition))
 
 ### Function Log Error
-> Example : MyBaseUtilsLogError.initFileLogError(valueString);
+> Example : MBUtilsLogError.initFileLogError(valueString);
 
 | Name               | Return    | Parameter                            | Keterangan    | 
 | ------------------ | --------- | ------------------------------------ | ------------- |
-| `initFileLogError` | `void`    | `String appName, String logLocation` | Function membuat file yang akan menyimpan log error jika ada Force Close ke lokasi yang sudah kamu set |
+| `initFileLogError` | `void`    | `String appName, String logLocation` | Function to make Logs File if your app get `Force Close` and you can put file in external. |
 
 ---
-
-<p align="end"><b><i>Download</i></b></p>
-
 ## Download
-
 Minimum Android SDK Version 16
-
 #### Gradle
-**Step 1.** tambahkan maven jitpack.io ke build.gradle (Project) :
+Add maven `jitpack.io` and `depedencies` in build.gradle (Project) :
 ```gradle
+// build.gradle project
 allprojects {
   repositories {
     google()
@@ -46,11 +46,10 @@ allprojects {
     maven { url 'https://jitpack.io' }
   }
 }
-```
 
-**Step 2.** tambahkan depedensi ke build.gradle (Module) :
-```gradle
+// build.gradle app/module
 dependencies {
+  ...
   implementation 'com.github.gzeinnumer:MyLibLogError:versi'
 }
 ```
@@ -81,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         String appName = getResources().getString(R.string.app_name);
         //   /storage/emulated/0/MyLibsTesting/logs
         String logLocation = "/logs";
-        MyBaseUtilsLogError.initFileLogError(appName, logLocation);
+        MBUtilsLogError.initFileLogError(appName, logLocation);
     }
 
     ...
