@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibUtils/blob/master/preview/bg.jpg" width="400"/>
+  <img src="https://dafunda.com/wp-content/uploads/2019/10/Aplikasi-sering-force-close-min.jpg" width="400"/>
 </p>
 
 <h1 align="center">
@@ -65,7 +65,7 @@ If you find trouble and this library doesn't work, you can trace error with this
 
 #
 ### Step 1.
-If you has get permission, you can run function inside `onRequestPermissionsResult`  `onSuccessCheckPermitions`.  
+If you has get permission, you can run function `onSuccessCheckPermitions` inside `onRequestPermissionsResult`.  
 **Remember : You only need use this function 1 TIME in your FirstActivity(on Manifest) or Activity that you use to request permission**:
 
 ```java
@@ -101,7 +101,7 @@ Preview :
 
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example6.jpg)|
 |--|
-|Looks like logcat on Android studio|
+|Looks like logcat on Android Studio|
 
 ---
 
