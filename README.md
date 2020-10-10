@@ -35,7 +35,6 @@ MyLibLogError
 ---
 ## Download
 Minimum Android SDK Version 16
-#### Gradle
 Add maven `jitpack.io` and `depedencies` in build.gradle (Project) :
 ```gradle
 // build.gradle project
@@ -57,18 +56,17 @@ dependencies {
 ---
 
 ## Function Log Error
-**This library need permission. You can use your own yay to get permition, or you can use my repo, here is my repository ([MultiPermition](https://github.com/gzeinnumer/MultiPermition)) (Follow Step 1 - Step 9) :**
-**Contoh Multi Check Permissions. Kamu bisa lihat contohnya disini MultiPermition ([docs](https://github.com/gzeinnumer/MultiPermition)) (Ikuti Step 1 - Step 9)** :
+**This library need permission. You can use your own yay to get permition, or you can use my repo, here is my repository ([MultiPermition](https://github.com/gzeinnumer/MultiPermition)) (Follow Step 1 - Step 9)** :
 
 ### DEBUG.
-If you find troble and this library doesn't work, you can trace error with thih log.
+If you find trouble and this library doesn't work, you can trace error with this log in logcat.
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/debug.jpg)|
 |--|
 
 #
 ### Step 1.
-If you has get permission, you can run function inside `onRequestPermissionsResult`  `onSuccessCheckPermitions` .  
-**Remember : You only need use this function 1 TIME in your FirstActivity(on Manifest) / or Activity that you use to request permission**:
+If you has get permission, you can run function inside `onRequestPermissionsResult`  `onSuccessCheckPermitions`.  
+**Remember : You only need use this function 1 TIME in your FirstActivity(on Manifest) or Activity that you use to request permission**:
 
 ```java
 public class MainActivity extends AppCompatActivity {
