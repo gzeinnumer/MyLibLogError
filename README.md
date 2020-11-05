@@ -17,6 +17,7 @@ MyLibLogError
 </div>
 
 ---
+
 ## Download
 Minimum Android SDK Version 16
 Add maven `jitpack.io` and `dependencies` in build.gradle (Project) :
@@ -53,10 +54,10 @@ dependencies {
 
 ---
 
-## Use
+## USE
 **This library need permission. You can use your own way to get permition, or you can use my repo, here is my repository ([MultiPermission](https://github.com/gzeinnumer/MultiPermition)) (Follow Step 1 - Step 9)** :
 
-### DEBUG.
+#### DEBUG.
 If you find trouble and this library doesn't work, you can trace error with this log in logcat.
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/debug.jpg)|
 |--|
