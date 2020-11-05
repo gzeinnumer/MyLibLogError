@@ -47,7 +47,7 @@ dependencies {
 ## Function Log Error
 > Example : MBUtilsLogError.initFileLogError(valueString);
 
-| Name               | Return    | Parameter                            | Keterangan    | 
+| Name               | Return    | Parameter                            | Desc    |
 | ------------------ | --------- | ------------------------------------ | ------------- |
 | `initFileLogError` | `void`    | `String appName, String logLocation` | Function to make Logs File if your app get `Force Close` and you can put file in external. |
 
