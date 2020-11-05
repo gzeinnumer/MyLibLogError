@@ -19,7 +19,7 @@ MyLibLogError
 ---
 ## Download
 Minimum Android SDK Version 16
-Add maven `jitpack.io` and `depedencies` in build.gradle (Project) :
+Add maven `jitpack.io` and `dependencies` in build.gradle (Project) :
 ```gradle
 // build.gradle project
 allprojects {
