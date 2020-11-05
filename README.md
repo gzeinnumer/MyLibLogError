@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
 #
 #### Step 2.
-FullCode ([example](https://github.com/gzeinnumer/MyLibLogError/blob/master/example/MainActivity.java))
+**[FullCode](https://github.com/gzeinnumer/MyLibLogError/blob/master/example/MainActivity.java)**
 
 Preview :
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example1.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example2.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example3.jpg)|
