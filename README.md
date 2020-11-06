@@ -45,7 +45,9 @@ dependencies {
 - File ([docs](https://developer.android.com/reference/java/io/File))
 - MultiPermission ([docs](https://github.com/gzeinnumer/MultiPermition))
 
-## Function Log Error
+---
+
+### Function Log Error
 > Example : MBUtilsLogError.initFileLogError(valueString);
 
 | Name               | Return    | Parameter                            | Desc    |
