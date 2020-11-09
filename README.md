@@ -18,24 +18,9 @@ MyLibLogError
 
 ---
 
-### Feature List
-- [x] **Make Log File** like logcat in **Android Studio**.
-
-### Tech stack and 3rd library
-- File ([docs](https://developer.android.com/reference/java/io/File))
-- MultiPermission ([docs](https://github.com/gzeinnumer/MultiPermition))
-
-### Function Log Error
-> Example : MBUtilsLogError.initFileLogError(valueString);
-
-| Name               | Return    | Parameter                            | Keterangan    | 
-| ------------------ | --------- | ------------------------------------ | ------------- |
-| `initFileLogError` | `void`    | `String appName, String logLocation` | Function to make Logs File if your app get `Force Close` and you can put file in external. |
-
----
 ## Download
 Minimum Android SDK Version 16
-Add maven `jitpack.io` and `depedencies` in build.gradle (Project) :
+Add maven `jitpack.io` and `dependencies` in build.gradle (Project) :
 ```gradle
 // build.gradle project
 allprojects {
@@ -53,18 +38,34 @@ dependencies {
 }
 ```
 
+## Feature List
+- [x] **Make Log File** like logcat in **Android Studio**.
+
+## Tech stack and 3rd library
+- File ([docs](https://developer.android.com/reference/java/io/File))
+- MultiPermission ([docs](https://github.com/gzeinnumer/MultiPermition))
+
 ---
 
-## Function Log Error
-**This library need permission. You can use your own yay to get permition, or you can use my repo, here is my repository ([MultiPermition](https://github.com/gzeinnumer/MultiPermition)) (Follow Step 1 - Step 9)** :
+### Function Log Error
+> Example : MBUtilsLogError.initFileLogError(valueString);
 
-### DEBUG.
+| Name               | Return    | Parameter                            | Desc    |
+| ------------------ | --------- | ------------------------------------ | ------------- |
+| `initFileLogError` | `void`    | `String appName, String logLocation` | Function to make Logs File if your app get `Force Close` and you can put file in external. |
+
+---
+
+## USE
+**This library need permission. You can use your own way to get permition, or you can use my repo, here is my repository ([MultiPermission](https://github.com/gzeinnumer/MultiPermition)) (Follow Step 1 - Step 9)** :
+
+#### DEBUG.
 If you find trouble and this library doesn't work, you can trace error with this log in logcat.
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/debug.jpg)|
 |--|
 
 #
-### Step 1.
+#### Step 1.
 If you has get permission, you can run function `onSuccessCheckPermitions` inside `onRequestPermissionsResult`.  
 **Remember : You only need use this function 1 TIME in your FirstActivity(on Manifest) or Activity that you use to request permission**:
 
@@ -87,8 +88,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-### Step 2.
-FullCode ([example](https://github.com/gzeinnumer/MyLibLogError/blob/master/example/MainActivity.java))
+#### Step 2.
 
 Preview :
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example1.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example2.jpg)|![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example3.jpg)|
@@ -102,6 +102,21 @@ Preview :
 |![](https://github.com/gzeinnumer/MyLibLogError/blob/master/assets/example6.jpg)|
 |--|
 |Looks like logcat on Android Studio|
+
+---
+
+### Version
+- **0.0.3**
+  - First Release
+
+---
+
+### Contribution
+You can sent your constibution to `branche` `open-pull`.
+
+---
+
+**FullCode [MainActivity](https://github.com/gzeinnumer/MyLibLogError/blob/master/example/MainActivity.java)**
 
 ---
 
