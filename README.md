@@ -105,7 +105,29 @@ Preview :
 
 ---
 
+### Version
+- **0.0.3**
+  - First Release
+
+---
+
+### Contribution
+You can sent your constibution to `branche` `open-pull`.
+
+---
+
 **FullCode [MainActivity](https://github.com/gzeinnumer/MyLibLogError/blob/master/example/MainActivity.java)**
+
+---
+
+### Version
+- **0.0.3**
+  - First Release
+
+---
+
+### Contribution
+You can sent your constibution to `branche` `open-pull`.
 
 ---
 
