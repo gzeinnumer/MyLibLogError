@@ -30,10 +30,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //gunakan function ini cukup satu kali saja pada awal activity
-        String externalFolderName = getApplication().getString(R.string.app_name); //MyLibsTesting
-        FunctionGlobalDir.initExternalDirectoryName(externalFolderName);
-
         if (checkPermissions()) {
             Toast.makeText(this, "Izin sudah diberikan", Toast.LENGTH_SHORT).show();
             onSuccessCheckPermitions();
