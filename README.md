@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://dafunda.com/wp-content/uploads/2019/10/Aplikasi-sering-force-close-min.jpg" width="400"/>
+  <img src="https://dafunda.com/wp-content/uploads/2019/10/Aplikasi-sering-force-close-min.jpg"/>
 </p>
 
 <h1 align="center">
@@ -10,15 +10,24 @@ MyLibLogError
     <a><img src="https://img.shields.io/badge/Version-0.0.3-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
-    <a><img src="https://img.shields.io/badge/Koltin-Suport-green?logo=kotlin&style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
     <a href="https://github.com/gzeinnumer"><img src="https://img.shields.io/github/followers/gzeinnumer?label=follow&style=social"></a>
     <br>
     <p>Function to make Logs File if your app get <b>Force Close</b>, so you can track if error happen to your app in production.</p>
 </div>
 
 ---
+# Content List
+* [Download](#download)
+* [Feature List](#feature-list)
+* [Tech stack and 3rd library](#tech-stack-and-3rd-library)
+* [Usage](#usage)
+* [Example Code/App](#example-codeapp)
+* [Version](#version)
+* [Contribution](#contribution)
 
-## Download
+---
+# Download
 Minimum Android SDK Version 16
 Add maven `jitpack.io` and `dependencies` in build.gradle (Project) :
 ```gradle
@@ -38,14 +47,17 @@ dependencies {
 }
 ```
 
-## Feature List
+---
+# Feature List
 - [x] **Make Log File** like logcat in **Android Studio**.
 
-## Tech stack and 3rd library
+---
+# Tech stack and 3rd library
 - File ([docs](https://developer.android.com/reference/java/io/File))
 - MultiPermission ([docs](https://github.com/gzeinnumer/MultiPermition))
 
 ---
+# Usage
 
 ### Function Log Error
 > Example : MBUtilsLogError.initFileLogError(valueString);
@@ -54,10 +66,7 @@ dependencies {
 | ------------------ | --------- | ------------------------------------ | ------------- |
 | `initFileLogError` | `void`    | `String appName, String logLocation` | Function to make Logs File if your app get `Force Close` and you can put file in external. |
 
----
-
-## USE
-**This library need permission. You can use your own way to get permition, or you can use my repo, here is my repository ([MultiPermission](https://github.com/gzeinnumer/MultiPermition)) (Follow Step 1 - Step 9)** :
+**This library need permission. You can use your own way to get permission, or you can use my repo, here is my repository ([MultiPermission](https://github.com/gzeinnumer/MultiPermition2)) (Follow Step 1 - Step 9)** :
 
 #### DEBUG.
 If you find trouble and this library doesn't work, you can trace error with this log in logcat.
@@ -104,19 +113,20 @@ Preview :
 |Looks like logcat on Android Studio|
 
 ---
+## Example Code/App
 
 **FullCode [MainActivity](https://github.com/gzeinnumer/MyLibLogError/blob/master/example/MainActivity.java)**
 
 ---
 
-### Version
+## Version
 - **0.0.3**
   - First Release
 
 ---
 
-### Contribution
-You can sent your constibution to `branche` `open-pull`.
+## Contribution
+You can sent your constibution to `branch` `open-pull`.
 
 ---
 
