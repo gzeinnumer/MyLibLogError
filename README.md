@@ -66,7 +66,7 @@ dependencies {
 | ------------------ | --------- | ------------------------------------ | ------------- |
 | `initFileLogError` | `void`    | `String appName, String logLocation` | Function to make Logs File if your app get `Force Close` and you can put file in external. |
 
-**This library need permission. You can use your own way to get permition, or you can use my repo, here is my repository ([MultiPermission](https://github.com/gzeinnumer/MultiPermition)) (Follow Step 1 - Step 9)** :
+**This library need permission. You can use your own way to get permission, or you can use my repo, here is my repository ([MultiPermission](https://github.com/gzeinnumer/MultiPermition2)) (Follow Step 1 - Step 9)** :
 
 #### DEBUG.
 If you find trouble and this library doesn't work, you can trace error with this log in logcat.
